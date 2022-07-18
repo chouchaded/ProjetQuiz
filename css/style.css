@@ -1,0 +1,202 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: initial !important;
+  line-height: initial !important;
+}
+
+body {
+  font-family: arial;
+  font-size: 18px;
+  line-height: 1.6em;
+  background-color: #ffffff !important;
+}
+
+button {
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  background-color: chartreuse;
+  font-weight: bold;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: rgb(255, 164, 164);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: inline-block;
+  width: 280px;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  /* width: 97%; */
+
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  background-color: chartreuse;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#container {
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 10px;
+  width: 60%;
+  background-color: #acadff;
+  border: rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+header {
+  margin-top: 5px;
+  margin: 0 auto;
+  width: 60%;
+  border-width: 5px;
+  border-radius: 10px;
+  border: #1c6ea4;
+  border-style: solid;
+}
+
+.titre {
+  /* width: 60%; */
+  margin: 5px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titre1 {
+  /* width: 60%; */
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5px;
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+a.start {
+  display: inline-block;
+  color: #666;
+  border: 1px dotted #ccc;
+  padding: 6px 13px;
+}
+
+.current {
+  padding: 10px;
+  background: #f4f4f4;
+  border: #ccc dotted 1px;
+  margin: 20px 0 10px 0;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+table.blueTable {
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: left;
+}
+table.blueTable td,
+table.blueTable th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable thead {
+  background: #1c6ea4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #5592bb 0%,
+    #327cad 66%,
+    #1c6ea4 100%
+  );
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  border-left: 2px solid #d0e4f5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a {
+  display: inline-block;
+  background: #1c6ea4;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 394px) {
+  .container {
+    margin: 0px;
+    width: 94%;
+  }
+  body {
+    margin: 0px;
+  }
+  #container {
+    margin: 0px;
+    width: 94%;
+  }
+  .titre {
+    padding: 0;
+  }
+}
