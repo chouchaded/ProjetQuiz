@@ -1,4 +1,4 @@
-# Quiz QCM !'
+# Simple PHP Quiz
 
 Résumé de projet
 

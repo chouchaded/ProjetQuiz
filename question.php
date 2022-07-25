@@ -31,13 +31,12 @@ $choices = $mysqli->query($query) or die($mysqli->error . __LINE__);
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
+  <header>
+      <?php
+include 'header1.html'
+?>
+    </header>
     <div id="container">
-      <header>
-        <div class="container">
-          <h1>PHP Quizzer</h1>
-	</div>
-      </header>
-
 
       <main>
       <div class="container" style="text-align: center ;">

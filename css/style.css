@@ -63,7 +63,7 @@ input[type="submit"] {
   padding: 10px;
   width: 60%;
   background-color: #acadff;
-  border: rgb(0, 0, 0);
+  border: #000000;
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
@@ -75,7 +75,7 @@ header {
   width: 60%;
   border-width: 5px;
   border-radius: 10px;
-  border: #1c6ea4;
+  border: #acadff;
   border-style: solid;
 }
 
@@ -135,35 +135,37 @@ a.start {
 }
 
 table.blueTable {
-  border: 1px solid #1c6ea4;
+  border: 1px solid #000000;
+  border-radius: 4px;
   background-color: #eeeeee;
   width: 100%;
   text-align: left;
 }
 table.blueTable td,
 table.blueTable th {
-  border: 1px solid #aaaaaa;
+  border: 1px solid #000000;
+  border-radius: 4px;
   padding: 3px 2px;
 }
 table.blueTable tbody td {
-  font-size: 13px;
+  font-size: 15px;
 }
 table.blueTable thead {
-  background: #1c6ea4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: #eb6b2d;
+  background: -moz-linear-gradient(top, #ffba97 0%, #ffa87d 50%, #eb6b2d 100%);
   background: -webkit-linear-gradient(
     top,
-    #5592bb 0%,
-    #327cad 66%,
-    #1c6ea4 100%
+    #ffba97 0%,
+    #ffa87d 50%,
+    #eb6b2d 100%
   );
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: linear-gradient(to bottom, #ffba97 0%, #ffa87d 50%, #eb6b2d 100%);
   border-bottom: 2px solid #444444;
 }
 table.blueTable thead th {
   font-size: 15px;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   border-left: 2px solid #d0e4f5;
 }
 table.blueTable thead th:first-child {
@@ -198,5 +200,17 @@ table.blueTable tfoot .links a {
   }
   .titre {
     padding: 0;
+    width: 100%;
+    margin: 5px;
+  }
+  .titre1 {
+    padding: 0;
+    width: 100%;
+    margin: 5px;
+  }
+  header {
+    margin: 10px;
+
+    width: 94%;
   }
 }

@@ -2,8 +2,8 @@
 <?php session_start();?>
 <?php
 //Create Select Query
-$query = "select * from shouts order by time desc limit 100";
-$shouts = mysqli_query($con, $query);
+// $query = "select * from $shouts order by time desc limit 100";
+// $shouts = mysqli_query($con, $query);
 
 ?>
 <!DOCTYPE html>
@@ -14,14 +14,14 @@ $shouts = mysqli_query($con, $query);
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <div id="container">
-      <header>
-        <div class="container">
-          <h1>PHP Quizzer</h1>
-	</div>
-      </header>
 
+    <header>
+      <?php
+include 'header1.html'
+?>
+    </header>
 
+<div id="container">
       <main>
 	<div class="container" style="text-align: center ;">
 	     <h2>Quizz QCM terminé !</h2>
@@ -35,7 +35,7 @@ $shouts = mysqli_query($con, $query);
   </div>
       </main>
 
-
+</div>
       <footer>
       <?php
 include 'footer.html'

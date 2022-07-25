@@ -4,6 +4,11 @@
    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
+    <header>
+    <?php
+include 'header1.html'
+?>
+</header>
 <?php
 require 'database.php';
 session_start();
@@ -23,20 +28,21 @@ if (isset($_POST['username'])) {
         $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
     }
 }
-?>
-<div id="container" style="text-align: center ;">
+?><div id="container">
+<div class="container" style="text-align: center ;">
 <p><form class="box" action="" method="post" name="login">
 
 <h1 class="box-title">Connexion</h1>
 <input type="text"  name="username" placeholder="Nom d'utilisateur">
 <input type="password"  name="password" placeholder="Mot de passe"></p>
 <p><input type="submit" value="Connexion " name="submit" class="box-button"></p>
+ <div><button><a href="index.php">Retour acceuil</a></button></div>
 <!-- <p class="box-register">Vous êtes nouveau ici? <a href="register.php">S'inscrire</a></p> -->
 <?php if (!empty($message)) {?>
     <p class="errorMessage"><?php echo $message; ?></p>
 <?php }?>
 </form>
-</div>
+</div></div>
 <script language="JavaScript" type="text/javascript">
 var titre = "-<<<--- Quizz QCM ! --->>>-";
 function bougerTitre()
@@ -47,5 +53,10 @@ function bougerTitre()
  }
 bougerTitre();
 </script>
+<footer>
+      <?php
+include 'footer.html'
+?>
+    </footer>
 </body>
 </html>

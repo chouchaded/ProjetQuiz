@@ -92,46 +92,18 @@ include 'header1.html'
 	     <?php
 if (isset($msg)) {echo "<p>" . $msg . "</p>";}
 
-$sql = "SELECT * FROM questions";
+$sql = "SELECT * FROM questions WHERE question_number = 1";
+// $sqlC = "SELECT * FROM choices WHERE question_number = ?";
 
 if ($result = mysqli_query($mysqli, $sql)) {
     if (mysqli_num_rows($result) > 0) {
-        echo '<table class="blueTable">';
-        echo '<thead  ">';
-        echo '<tr >';
-        // echo "<th>#</th>";
-        echo "<th>N° Questions</th>";
-        echo "<th>Questions</th>";
-
-        echo '<th style="text-align : center">Effacer Question</th>';
-        echo '<th style="text-align : center">Effacer Réponses</th>';
-        echo '<th style="text-align : center">voir</th>';
-
-        echo "</tr>";
-        echo "</thead>";
-        echo "<tbody>";
         while ($row = mysqli_fetch_array($result)) {
-            echo "<tr>";
-            echo '<td >' . $row['question_number'] . "</td>";
-            echo '<td >' . $row['question'] . "</td>";
 
-            echo '<td style="text-align : center" >';
-            echo '<a href="delete.php?question_number=' . $row['question_number'] . ' "><span>effacer</span></a>';
-            echo "</td>";
+            echo $row['question_number'];
+            echo $row['question'];
 
-            echo '<td style="text-align : center">';
-            echo '<a href="deleteC.php?question_number=' . $row['question_number'] . ' "><span>effacer</span></a>';
-            echo "</td>";
-
-            echo '<td style="text-align : center">';
-            echo '<a href="voirC.php?question_number=' . $row['question_number'] . ' "><span>modifier</span></a>';
-
-            echo "</td>";
-
-            echo "</tr>";
         }
-        echo "</tbody>";
-        echo "</table>";
+
         // Free result set
         mysqli_free_result($result);
     } else {
@@ -140,6 +112,7 @@ if ($result = mysqli_query($mysqli, $sql)) {
 } else {
     echo "Oops! Une erreur est survenue";
 }
+
 ?>
 	     <form name="formAdd" method="post" action="add.php">
 	     	   <p>
