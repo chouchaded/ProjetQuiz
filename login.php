@@ -6,7 +6,7 @@
 <body>
     <header>
     <?php
-include 'header1.html'
+include './html/header1.html'
 ?>
 </header>
 <?php
@@ -23,7 +23,7 @@ if (isset($_POST['username'])) {
     $rows = mysqli_num_rows($result);
     if ($rows == 1) {
         $_SESSION['username'] = $username;
-        header("Location: add.php");
+        header("Location: ./admin/add.php");
     } else {
         $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
     }
@@ -55,7 +55,7 @@ bougerTitre();
 </script>
 <footer>
       <?php
-include 'footer.html'
+include './html/footer.html'
 ?>
     </footer>
 </body>

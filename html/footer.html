@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+    <title>Quiz QCM !</title>
+  </head>
+  <body>
+    <p style="text-align: center">
+      <form name="form1">
+<input type="text" name="deftext" >
+      </form>
+    </p>
+   
+
+    <script language="JavaScript">
+      var position = 0
+      var msg = "-<<-- Projet Titre Professionel - Formation Simplon 08/2022 -->>-"
+      // var msg = "     " + msg
+      var longue = msg.length
+      var fois = 70 / msg.length + 1
+      for (i = 0; i <= fois; i++) msg += msg
+      function textdefil() {
+        document.form1.deftext.value = msg.substring(position, position + 70)
+        position++
+        if (position == longue) position = 0
+        setTimeout("textdefil()", 100)
+      }
+      window.onload = textdefil
+    </script>
+  </body>
+</html>

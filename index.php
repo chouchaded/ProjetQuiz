@@ -1,4 +1,4 @@
- <?php include "database.php";?>
+ <?php include "./database.php";?>
 
 <?php
 //Get the total questions
@@ -18,7 +18,7 @@ $total = $results->num_rows;
   <body>
     <header>
       <?php
-include 'header.html'
+include './html/header.html';
 ?>
     </header>
     <div id="container">
@@ -35,7 +35,7 @@ include 'header.html'
 <div style="text-align: center ;">
 <?php
 if ($total >= 1) {
-    echo "<button><a href='question.php?n=1' class='start'>C'est parti !</a></button>";
+    echo "<button><a href='quiz/question.php?n=1' class='start'>C'est parti !</a></button>";
 } else {
     echo "/!\ Pas de question /!\ ";
 }
@@ -49,7 +49,7 @@ if ($total >= 1) {
 
       <footer>
       <?php
-include 'footer.html'
+include './html/footer.html'
 ?>
     </footer>
   </body>
