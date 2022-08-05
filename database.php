@@ -7,9 +7,9 @@
 
 //Create connection credentials
 $db_host = 'localhost';
-$db_name = 'quiz8';
-$db_user = 'root';
-$db_pass = 'aqw1zsx2';
+$db_name = 'hahahha';
+$db_user = 'tu croyais quoi';
+$db_pass = 'pas de mot de passe';
 
 //Create mysqli object
 $mysqli = new mysqli($db_host,$db_user,$db_pass,$db_name);
